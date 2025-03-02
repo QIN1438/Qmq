@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+  name: "Tom",
+  sizes: {
+    height: 185,
+    width: 55
+  }
+};
+let clone = Object.assign({}, user);
+alert( user.sizes === clone.sizes ); // true，同一个对象
+// user 和 clone 分享同一个 sizes
+user.sizes.width++;       // 通过其中一个改变属性值
+alert(clone.sizes.width); // 51，能从另外
+    </script>
+</body>
+</html>

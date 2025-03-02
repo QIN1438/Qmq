@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let user = { name: "John" };
+let clone = { name: "Andy" };
+
+function word() {
+  alert( this.name );
+}
+
+// 在两个对象中使用相同的函数
+user.f = word;
+clone.f = word;
+
+// 这两个调用有不同的 this 值
+// 函数内部的 "this" 是“点符号前面”的那个对象
+user.f(); // John（this == user）
+clone.f(); // Admin（this == admin）
+
+   </script>
+</body>
+</html>
