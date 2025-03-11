@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user1 ={
+            name:"Andy",
+            key:Symbol(),
+        };
+        let user2 ={
+            name:"Bob",
+            key:Symbol(),
+        };
+        let grade ={
+            [user1.key]:{
+                math:90,
+                english:80,
+                chinese:70
+            },
+            [user2.key]:{
+                math:90,
+                english:80,
+                chinese:70
+            }
+        };
+        alert(grade[user1.key]?.math);
+    </script>
+</body>
+</html>

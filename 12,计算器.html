@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器</title>
+</head>
+<body>
+    <script>
+        let caclulator= {
+             read(){
+                this.a=+prompt("a?",0);
+                this.b=+prompt("b?",0);
+            },
+            sum(){
+                return this.a+this.b;
+            },
+            mul(){
+                return this.a*this.b;
+            }
+        };
+        caclulator.read();
+        alert(caclulator.sum());
+        alert(caclulator.mul());
+    </script>
+</body>
+</html>
