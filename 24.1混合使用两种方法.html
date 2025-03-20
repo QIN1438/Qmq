@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user ={
+            name: "Andy",
+            age: 18,
+            toString() {
+                return `{name:"${this.name}"}`;
+            },
+            valueOf() {
+                return this.age;
+            }
+        };
+        alert(user);
+        alert(+user);
+        alert(user + 2);
+    </script>
+</body>
+</html>
