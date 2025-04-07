@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let value = [1,2,3,4,5] ;
+        let sum = value.reduce((a,b) => a+b);
+        alert(sum);
+        let sum1 = value.reduce((a,b) => a*b);
+        alert(sum1);
+        let sum2 = value.reduce((a,b) => a>b ? a : b);
+        alert(sum2);
+    </script>
+</body>
+</html>

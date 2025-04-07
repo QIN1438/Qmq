@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Age = {
+  minAge: 18,
+  maxAge: 28,
+  Puberty(user) {
+    return user.age >= this.minAge && user.age < this.maxAge;
+  }
+};
+
+let users = [
+  {age: 16},
+  {age: 20},
+  {age: 23},
+  {age: 30}
+];
+
+// 找到 army.canJoin 返回 true 的 user
+let teenagers = users.filter(Age.Puberty, Age);
+
+alert(teenagers.length); // 2
+alert(teenagers[0].age); // 20
+alert(teenagers[1].age); // 23
+    </script>
+</body>
+</html>
